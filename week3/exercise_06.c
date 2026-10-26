@@ -2,9 +2,9 @@
 int main(void) {
     int category, item;
     printf("Category (1=Meals, 2=Drinks): ");
-    if (scanf("%d", &category) != 1) return 1;
+    scanf("%d", &category);
     printf("Item number (1 or 2): ");
-    if (scanf("%d", &item) != 1) return 1;
+    scanf("%d", &item);
     switch (category) {
         case 1:
             switch (item) {

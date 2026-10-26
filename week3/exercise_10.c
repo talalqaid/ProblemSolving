@@ -3,13 +3,13 @@ int main(void) {
     int shape, calculation;
     double a, b;
     printf("Shape (1=Square, 2=Rectangle): ");
-    if (scanf("%d", &shape) != 1) return 1;
+    scanf("%d", &shape);
     printf("Calculation (1=Area, 2=Perimeter): ");
-    if (scanf("%d", &calculation) != 1) return 1;
+    scanf("%d", &calculation);
     switch (shape) {
         case 1:
             printf("Side length: ");
-            if (scanf("%lf", &a) != 1) return 1;
+            scanf("%lf", &a);
             if (a <= 0) { printf("Invalid length\n"); break; }
             switch (calculation) {
                 case 1: printf("Area: %.2f\n", a * a); break;
@@ -19,7 +19,7 @@ int main(void) {
             break;
         case 2:
             printf("Length and width: ");
-            if (scanf("%lf %lf", &a, &b) != 2) return 1;
+            scanf("%lf %lf", &a, &b);
             if (a <= 0 || b <= 0) { printf("Invalid dimensions\n"); break; }
             switch (calculation) {
                 case 1: printf("Area: %.2f\n", a * b); break;

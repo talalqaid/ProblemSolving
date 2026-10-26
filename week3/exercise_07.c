@@ -2,9 +2,9 @@
 int main(void) {
     int department, course;
     printf("Department (1=Computing, 2=Business): ");
-    if (scanf("%d", &department) != 1) return 1;
+    scanf("%d", &department);
     printf("Course (1 or 2): ");
-    if (scanf("%d", &course) != 1) return 1;
+    scanf("%d", &course);
     switch (department) {
         case 1:
             switch (course) {

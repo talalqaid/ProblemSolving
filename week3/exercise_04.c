@@ -2,7 +2,7 @@
 int main(void) {
     int month;
     printf("Enter month number (1-12): ");
-    if (scanf("%d", &month) != 1) return 1;
+    scanf("%d", &month);
     switch (month) {
         case 12: case 1: case 2: printf("Winter\n"); break;
         case 3: case 4: case 5: printf("Spring\n"); break;

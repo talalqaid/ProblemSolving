@@ -3,9 +3,9 @@ int main(void) {
     int group, direction;
     double value;
     printf("Group (1=Distance, 2=Mass): ");
-    if (scanf("%d", &group) != 1) return 1;
+    scanf("%d", &group);
     printf("Direction (1 or 2): ");
-    if (scanf("%d", &direction) != 1) return 1;
+    scanf("%d", &direction);
     printf("Enter value: ");
     if (scanf("%lf", &value) != 1) return 1;
     switch (group) {

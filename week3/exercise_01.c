@@ -2,7 +2,7 @@
 int main(void) {
     int day;
     printf("Enter day number (1-7): ");
-    if (scanf("%d", &day) != 1) return 1;
+    scanf("%d", &day);
     switch (day) {
         case 1: printf("Monday\n"); break;
         case 2: printf("Tuesday\n"); break;

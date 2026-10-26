@@ -3,7 +3,7 @@ int main(void) {
     double a, b;
     char op;
     printf("Enter expression (e.g. 8 * 2): ");
-    if (scanf("%lf %c %lf", &a, &op, &b) != 3) return 1;
+    scanf("%lf %c %lf", &a, &op, &b);
     switch (op) {
         case '+': printf("Result: %.2f\n", a + b); break;
         case '-': printf("Result: %.2f\n", a - b); break;
